@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.primes.PrimeNumbers;
 
@@ -76,7 +77,7 @@ public class PrimeNumbersTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"54, 59", "55, 59", "56, 59", "57, 59", "58, 59", "59, 59", })
+    @CsvSource({"54, 59", "55, 59", "56, 59", "57, 59", "58, 59", "59, 59",})
     @DisplayName("Test if 59 is the next prime")
     public void testNextPrime_ShouldReturn59(int testInput, int expected) {
         PrimeNumbers primeNumbers = new PrimeNumbers();
@@ -84,5 +85,45 @@ public class PrimeNumbersTest {
         int actual = primeNumbers.nextPrime(testInput);
 
         assertEquals(actual, expected);
+    }
+
+    @Test
+    @DisplayName("Test primes in range 2 to 10")
+    public void testPrimesInRange_ShouldReturnCorrectRange2_10() {
+        PrimeNumbers primeNumbers = new PrimeNumbers();
+
+        int[] actualPrimesInRange = primeNumbers.primesInRange(2, 10);
+
+        assertArrayEquals(actualPrimesInRange, new int[]{2, 3, 5, 7});
+    }
+
+    @Test
+    @DisplayName("Test primes in range 11 to 20")
+    public void testPrimesInRange_ShouldReturnCorrectRange11_20() {
+        PrimeNumbers primeNumbers = new PrimeNumbers();
+
+        int[] actualPrimesInRange = primeNumbers.primesInRange(11, 20);
+
+        assertArrayEquals(actualPrimesInRange, new int[]{11, 13, 17, 19});
+    }
+
+    @Test
+    @DisplayName("Test primes in range 21 to 30")
+    public void testPrimesInRange_ShouldReturnCorrectRange21_30() {
+        PrimeNumbers primeNumbers = new PrimeNumbers();
+
+        int[] actualPrimesInRange = primeNumbers.primesInRange(21, 30);
+
+        assertArrayEquals(actualPrimesInRange, new int[]{23, 29});
+    }
+
+    @Test
+    @DisplayName("Test primes in range 31 to 40")
+    public void testPrimesInRange_ShouldReturnCorrectRange31_40() {
+        PrimeNumbers primeNumbers = new PrimeNumbers();
+
+        int[] actualPrimesInRange = primeNumbers.primesInRange(31, 40);
+
+        assertArrayEquals(actualPrimesInRange, new int[]{31, 37});
     }
 }

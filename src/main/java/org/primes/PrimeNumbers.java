@@ -7,7 +7,7 @@ public class PrimeNumbers {
             return true;
         }
 
-        int midpoint =  (int) Math.sqrt(n);
+        int midpoint = (int) Math.sqrt(n);
 
         for (int i = 2; i <= midpoint + 1; i++) {
             if (n % i == 0) {
@@ -22,11 +22,15 @@ public class PrimeNumbers {
 
         for (int i = n; i <= n + 30; i++) {
             if (isPrime(i)) {
-                return  i;
+                return i;
             }
         }
 
         return -1;
+    }
+
+    public static int[] primesInRange(int start, int end) {
+        return new int[]{};
     }
 
 }
