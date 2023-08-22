@@ -65,7 +65,7 @@ public class PrimeNumbersTest {
     }
 
     @ParameterizedTest
-    @CsvSource({"54, 59", "55, 59", "56, 59", "54, 59", "57, 59", "58, 59", "59, 59", })
+    @CsvSource({"54, 59", "55, 59", "56, 59", "57, 59", "58, 59", "59, 59", })
     @DisplayName("Test if 59 is the next prime")
     public void testNextPrime_ShouldReturn59(int testInput, int expected) {
         PrimeNumbers primeNumbers = new PrimeNumbers();
