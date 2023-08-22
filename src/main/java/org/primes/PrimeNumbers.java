@@ -18,4 +18,8 @@ public class PrimeNumbers {
         return true;
     }
 
+    public static int nextPrime(int n) {
+        return -1;
+    }
+
 }
