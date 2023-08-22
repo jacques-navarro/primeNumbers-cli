@@ -30,7 +30,22 @@ public class PrimeNumbers {
     }
 
     public static int[] primesInRange(int start, int end) {
-        return new int[]{};
+        String primes = "";
+
+        for (int i = start; i <= end ; i++) {
+            if (isPrime(i)) {
+                primes += i + " ";
+            }
+        }
+
+        String[] primesArray = primes.split(" ");
+        int[] primeInts = new int[primesArray.length];
+
+        for (int i = 0; i < primesArray.length; i++) {
+            primeInts[i] = Integer.valueOf(primesArray[i]);
+        }
+
+        return primeInts;
     }
 
 }
