@@ -39,6 +39,7 @@ build/
 
 ### Sonarlint ###
 .idea/sonarlint/
+index.pb
 
 ### JUnit ###
 htmlReport/
