@@ -54,6 +54,17 @@ public class PrimeNumbersTest {
     }
 
     @ParameterizedTest
+    @CsvSource({"14, 14", "14, 15", "14, 16", "14, 14"})
+    @DisplayName("Test agasint incorrect return for the next prime")
+    public void testNextPrime_ShouldNotReturnWrongNumber(int testInput, int expected) {
+        PrimeNumbers primeNumbers = new PrimeNumbers();
+
+        int actual = primeNumbers.nextPrime(testInput);
+
+        assertNotEquals(actual, expected);
+    }
+
+    @ParameterizedTest
     @CsvSource({"40, 41", "41, 41"})
     @DisplayName("Test if 41 is the next prime")
     public void testNextPrime_ShouldReturn41(int testInput, int expected) {
