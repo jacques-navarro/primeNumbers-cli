@@ -19,6 +19,13 @@ public class PrimeNumbers {
     }
 
     public static int nextPrime(int n) {
+
+        for (int i = n; i <= n + 30; i++) {
+            if (isPrime(i)) {
+                return  i;
+            }
+        }
+
         return -1;
     }
 
