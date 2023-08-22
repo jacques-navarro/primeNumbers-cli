@@ -26,7 +26,11 @@ If the given number is prime, it returns that number.
 
 ## Running the App
 
-To run the app in your local environment, simply open your terminal (Ctrl + Alt + T), copy and paste the following Commands.
+To run the app in your local environment
+1. Copy the following Commands
+2. Open your terminal (Ctrl + Alt + T)
+3. Paste (Ctrl + Shift + V)
+4. Press Enter
 
 ```
     git clone git@github.com:bunny-thief/primeNumbers-cli.git
