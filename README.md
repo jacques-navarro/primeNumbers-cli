@@ -24,8 +24,16 @@ If the given number is prime, it returns that number.
 
     11 is a prime number.
 
+## Running the App
 
+To run the app in your local environment, simply open your terminal (Ctrl + Alt + T), copy and paste the following Commands.
 
+```
+    git clone git@github.com:bunny-thief/primeNumbers-cli.git
+    cd primeNumbers-cli/src/main/java/
+    javac org/primes/*.java
+    java org.primes.Main
+```
 ## Unit Tests
 
 JUnit 5.10 tests have been written to ensure that each function returns the correct output.
