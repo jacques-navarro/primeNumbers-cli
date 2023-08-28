@@ -1,4 +1,4 @@
-# PrimeNumbers-cli v0.4 - Java
+# PrimeNumbers-cli v0.3 - Java
 
 This is a command line interface for working with prime numbers `{2, 3, 5, 7, ..., n}`
 
