@@ -142,7 +142,7 @@ public class UserInterface {
             while (true) {
 
                 try {
-                    System.out.println("Enter the first number:");
+                    System.out.print("Enter the first number:");
                     start = Integer.valueOf(scanner.nextLine());
                 } catch (NumberFormatException e) {
                     System.out.printf("Enter a number greater than 2 and smaller than %,d.\n", Integer.MAX_VALUE);
@@ -154,7 +154,7 @@ public class UserInterface {
             while (true) {
 
                 try {
-                    System.out.println("Enter the second number:");
+                    System.out.print("Enter the second number:");
                     end = Integer.valueOf(scanner.nextLine());
                 } catch (NumberFormatException e) {
                     System.out.printf("Enter a number greater than %d smaller than %,d.\n", start, Integer.MAX_VALUE);
@@ -162,6 +162,7 @@ public class UserInterface {
                 }
 
                 if (end >= start) {
+                    System.out.println();
                     break;
                 }
             }
