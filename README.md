@@ -1,4 +1,4 @@
-# PrimeNumbers-cli v0.3 - Java
+# PrimeNumbers-cli v0.4 - Java
 
 This is a command line interface for working with prime numbers `{2, 3, 5, 7, ..., n}`
 
@@ -44,8 +44,7 @@ If the given number is prime, it returns that number.
      41,   43,   47,   53,   59,   61,   67,   71,   73,   79,
      83,   89,   97,  101,  103,  107,  109,  113.
 
-
-## Running the App
+## Clone App with git
 
 To run the app in your local environment
 1. Copy the following Commands
@@ -59,6 +58,39 @@ To run the app in your local environment
     javac org/primes/*.java
     java org.primes.Main
 ```
+
+## Docker Image
+
+Pull image from Docker Hub
+
+    docker pull jacquesnavarro/primenumbers:latest
+
+Verify image was pulled down successfully
+
+    docker images
+
+| REPOSITORY                      |   TAG  |   IMAGE ID   | CREATED      | SIZE  |
+|---------------------------------|:------:|:------------:|--------------|-------|
+| jacquesnavarro/primenumbers-cli | latest | cbf69e946be3 | 10 hours ago | 407MB |
+    
+Run application in container
+
+    docker run -it --name primenumbers jacquesnavarro/primenumbers
+
+Remove container after application exits
+
+    docker rm primenumbers
+
+| primenumbers |
+|--------------|
+
+Remove image after container has been removed
+
+    docker rmi jacquesnavarro/primenumbers-cli:latest
+| Untagged: jacquesnavarro/primenumbers-cli:latest                                                                     |
+|----------------------------------------------------------------------------------------------------------------------|
+| Untagged: jacquesnavarro/primenumbers-cli@sha256:e39b902f1a39edfc25f67af3dcd4078ddf289584c4522cd49eb8acb1fd02479a \| |
+
 ## Unit Tests
 
 JUnit 5.10 tests have been written to ensure that each function returns the correct output.
