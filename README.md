@@ -1,12 +1,17 @@
+<p align="center"><img src="ThumbsUp.svg" width="200"></p>
+
 # PrimeNumbers-cli v0.3 - Java
 
 This is a command line interface for working with prime numbers `{2, 3, 5, 7, ..., n}`
 
 ## Functionality
 
-This version lets a user enter a number at the terminal which is then checked if it is a prime number of not and find the next prime number given an input.
+This version has the following functionality:
+- A user can input a number to check if it is a prime number
+- A user can input a number and find the next prime number. If the input is not prime it checks the next number until it finds the next prime number.
+- A user can input two numbers and receive a list of all prime numbers that are between those two numbers (inclusive).
 
-## Main menu
+### Main menu
 
     Select an option:
     1 - Check if number is prime
@@ -14,13 +19,13 @@ This version lets a user enter a number at the terminal which is then checked if
     3 - Find all prime number given a range
     4 - Exit
 
-### Check if a number is prime
+#### Check if a number is prime
 
     Enter a positive number to check if it's prime: 37 
 
     37 is a prime number.
 
-### Find the next prime
+#### Find the next prime
 
     Enter a positive number to check to find the next prime: 10
 
@@ -32,7 +37,7 @@ If the given number is prime, it returns that number.
 
     11 is a prime number.
 
-### Find prime numbers in a range
+#### Find prime numbers in a range
 
     Find all prime numbers between two numbers
     Enter the first number:
@@ -44,7 +49,9 @@ If the given number is prime, it returns that number.
      41,   43,   47,   53,   59,   61,   67,   71,   73,   79,
      83,   89,   97,  101,  103,  107,  109,  113.
 
-## Clone App with git
+## Deploy
+
+### Clone App with git
 
 To run the app in your local environment
 1. Copy the following Commands
@@ -59,13 +66,13 @@ To run the app in your local environment
     java org.primes.Main
 ```
 
-## Docker Image
+### Docker Image
 
-Pull image from Docker Hub
+#### Pull image from Docker Hub
 
     docker pull jacquesnavarro/primenumbers:latest
 
-Verify image was pulled down successfully
+#### Verify image was pulled down successfully
 
     docker images
 
@@ -73,18 +80,18 @@ Verify image was pulled down successfully
 |---------------------------------|:------:|:------------:|--------------|-------|
 | jacquesnavarro/primenumbers-cli | latest | cbf69e946be3 | 10 hours ago | 407MB |
     
-Run application in container
+#### Run application in container
 
     docker run -it --name primenumbers jacquesnavarro/primenumbers
 
-Remove container after application exits
+#### Remove container after application exits
 
     docker rm primenumbers
 
 | primenumbers |
 |--------------|
 
-Remove image after container has been removed
+#### Remove image after container has been removed
 
     docker rmi jacquesnavarro/primenumbers-cli:latest
 | Untagged: jacquesnavarro/primenumbers-cli:latest                                                                     |
