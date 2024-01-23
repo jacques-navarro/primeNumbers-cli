@@ -1,15 +1,16 @@
 package org.primes;
 
-import java.util.Scanner;
+import com.passingarguments.primenumbers.PrimeNumbers;
 
-import static org.primes.PrimeNumbers.isPrime;
-import static org.primes.PrimeNumbers.nextPrime;
+import java.util.Scanner;
 
 public class UserInterface {
     private Scanner scanner;
+    private PrimeNumbers primeNumbers;
 
     public UserInterface(Scanner scanner) {
         this.scanner = scanner;
+        primeNumbers = new PrimeNumbers();
     }
 
     public void run() {
@@ -74,7 +75,7 @@ public class UserInterface {
                     continue;
                 }
 
-                boolean isPrime = isPrime(n);
+                boolean isPrime = PrimeNumbers.isPrime(n);
 
                 if (isPrime) {
                     System.out.printf("%,d is a prime number.\n", n);
@@ -110,7 +111,7 @@ public class UserInterface {
                     continue;
                 }
 
-                int nextPrime = nextPrime(n);
+                int nextPrime = PrimeNumbers.nextPrime(n);
 
                 if (nextPrime == n) {
                     System.out.printf("%,d is a prime number.\n", n);

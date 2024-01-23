@@ -17,6 +17,11 @@
 
     <dependencies>
         <dependency>
+            <groupId>com.passingarguments</groupId>
+            <artifactId>primeNumbers</artifactId>
+            <version>0.3.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junitVersion}</version>
