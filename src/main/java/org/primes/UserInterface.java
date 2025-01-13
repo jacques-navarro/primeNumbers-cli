@@ -1,16 +1,14 @@
 package org.primes;
 
-import com.passingarguments.primenumbers.PrimeNumbers;
+import dev.passingarguments.primenumbers.PrimeNumbers;
 
 import java.util.Scanner;
 
 public class UserInterface {
     private Scanner scanner;
-    private PrimeNumbers primeNumbers;
 
     public UserInterface(Scanner scanner) {
         this.scanner = scanner;
-        primeNumbers = new PrimeNumbers();
     }
 
     public void run() {
