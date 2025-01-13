@@ -55,7 +55,7 @@ If the given number is prime, it returns that number.
 
 #### Pull image from Docker Hub
 
-    docker pull jacquesnavarro/primenumbers:latest
+    docker pull jacquesnavarro/primenumbers-cli:latest
 
 #### Verify image was pulled down successfully
 
@@ -67,7 +67,7 @@ If the given number is prime, it returns that number.
     
 #### Run application in container
 
-    docker run -it --name primenumbers jacquesnavarro/primenumbers
+    docker run -it --name primenumbers jacquesnavarro/primenumbers-cli
 
 #### Remove container after application exits
 
