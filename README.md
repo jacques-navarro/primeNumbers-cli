@@ -51,21 +51,6 @@ If the given number is prime, it returns that number.
 
 ## Deploy
 
-### Clone App with git
-
-To run the app in your local environment
-1. Copy the following Commands
-2. Open your terminal (Ctrl + Alt + T)
-3. Paste (Ctrl + Shift + V)
-4. Press Enter
-
-```
-    git clone git@github.com:jacques-navarro/primeNumbers-cli.git
-    cd primeNumbers-cli/src/main/java/
-    javac org/primes/*.java
-    java org.primes.Main
-```
-
 ### Docker Image
 
 #### Pull image from Docker Hub
