@@ -86,3 +86,7 @@ If the given number is prime, it returns that number.
 ## Unit Tests
 
 JUnit 5.10 tests have been written to ensure that each function returns the correct output.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
