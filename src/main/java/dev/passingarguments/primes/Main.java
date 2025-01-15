@@ -1,4 +1,4 @@
-package org.primes;
+package dev.passingarguments.primes;
 
 import java.util.Scanner;
 
