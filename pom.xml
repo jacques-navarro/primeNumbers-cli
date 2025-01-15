@@ -48,6 +48,27 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.0</version>
             </plugin>
+
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>3.4.4</version>
+                <configuration>
+                    <from>
+                        <image>eclipse-temurin:17</image>
+                    </from>
+                    <to>
+                        <image>primenumbers-cli</image>
+                        <tags>
+                            <tag>1.0</tag>
+                        </tags>
+                    </to>
+                    <container>
+                        <mainClass>dev.passingarguments.primes.Main</mainClass>
+                    </container>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 </project>
