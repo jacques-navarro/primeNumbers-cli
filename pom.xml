@@ -65,6 +65,7 @@
                     </to>
                     <container>
                         <mainClass>dev.passingarguments.primes.Main</mainClass>
+                        <creationTime>2025-01-15T16:00:00+0000</creationTime>
                     </container>
                 </configuration>
             </plugin>
